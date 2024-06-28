@@ -17,3 +17,5 @@ execute if score #hit_block_markers enchantplus.data matches 1.. as @e[type=mark
 # Fear enchantment prevent TNT and creeper explosions
 execute at @a[predicate=enchantplus:enchantments/fear] run function enchantplus:fear/tick
 
+# Auto-smelt XP
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{auto_smelt_drops_xp:true}}}}] at @s run function enchantplus:actions/auto_smelt_xp

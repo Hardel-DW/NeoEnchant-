@@ -28,6 +28,32 @@
               }
             }
           ]
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:custom_data": {
+              "auto_smelt_drops_xp": true,
+              "auto_smelt_xp": 2
+            }
+          },
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "predicates": {
+                  "minecraft:enchantments": [
+                    {
+                      "enchantments": "enchantplus:tools/auto_smelt",
+                      "levels": {
+                        "min": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
         }
       ],
       "entries": [
